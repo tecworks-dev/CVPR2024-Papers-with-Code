@@ -1,98 +1,98 @@
-# CVPR 2024 论文和开源项目合集(Papers with Code)
+# CVPR 2024 Papers and Open Source Projects Collection (Papers with Code)
 
 CVPR 2024 decisions are now available on OpenReview！
 
 
-> 注1：欢迎各位大佬提交issue，分享CVPR 2024论文和开源项目！
+> Note 1: Welcome to submit issues and share CVPR 2024 papers and open source projects!
 >
-> 注2：关于往年CV顶会论文以及其他优质CV论文和大盘点，详见： https://github.com/amusi/daily-paper-computer-vision
+> Note 2: For details about previous years' CV top conference papers and other high-quality CV papers and reviews, please see: https://github.com/amusi/daily-paper-computer-vision
 >
 > - [ECCV 2024](https://github.com/amusi/ECCV2024-Papers-with-Code)
 > - [CVPR 2023](CVPR2022-Papers-with-Code.md)
 
-欢迎扫码加入【CVer学术交流群】，这是最大的计算机视觉AI知识星球！每日更新，第一时间分享最新最前沿的计算机视觉、AI绘画、图像处理、深度学习、自动驾驶、医疗影像和AIGC等方向的学习资料，学起来！
+Welcome to scan the QR code to join the [CVer Academic Exchange Group], which is the largest computer vision AI knowledge planet! Updated daily, we will share the latest and most cutting-edge learning materials in computer vision, AI painting, image processing, deep learning, autonomous driving, medical imaging, AIGC and other fields as soon as possible. Let's learn!
 
-![](CVer学术交流群.png)
+![](CVer academic exchange group.png)
 
-# 【CVPR 2024 论文开源目录】
+# [CVPR 2024 Paper Open Source Directory]
 
 - [3DGS(Gaussian Splatting)](#3DGS)
 - [Avatars](#Avatars)
 - [Backbone](#Backbone)
 - [CLIP](#CLIP)
-- [MAE](#MAE)
+- [MAE] (#MAE)
 - [Embodied AI](#Embodied-AI)
 - [GAN](#GAN)
-- [GNN](#GNN)
-- [多模态大语言模型(MLLM)](#MLLM)
-- [大语言模型(LLM)](#LLM)
+- [GNN] (#GNN)
+- [Multimodal Large Language Model (MLLM)](#MLLM)
+- Large Language Model (LLM)
 - [NAS](#NAS)
 - [OCR](#OCR)
 - [NeRF](#NeRF)
 - [DETR](#DETR)
 - [Prompt](#Prompt)
-- [扩散模型(Diffusion Models)](#Diffusion)
-- [ReID(重识别)](#ReID)
-- [长尾分布(Long-Tail)](#Long-Tail)
+- [Diffusion Models](#Diffusion)
+- [ReID (Re-identification)](#ReID)
+- [Long-Tail](#Long-Tail)
 - [Vision Transformer](#Vision-Transformer)
-- [视觉和语言(Vision-Language)](#VL)
-- [自监督学习(Self-supervised Learning)](#SSL)
-- [数据增强(Data Augmentation)](#DA)
-- [目标检测(Object Detection)](#Object-Detection)
-- [异常检测(Anomaly Detection)](#Anomaly-Detection)
-- [目标跟踪(Visual Tracking)](#VT)
-- [语义分割(Semantic Segmentation)](#Semantic-Segmentation)
-- [实例分割(Instance Segmentation)](#Instance-Segmentation)
-- [全景分割(Panoptic Segmentation)](#Panoptic-Segmentation)
-- [医学图像(Medical Image)](#MI)
-- [医学图像分割(Medical Image Segmentation)](#MIS)
-- [视频目标分割(Video Object Segmentation)](#VOS)
-- [视频实例分割(Video Instance Segmentation)](#VIS)
-- [参考图像分割(Referring Image Segmentation)](#RIS)
-- [图像抠图(Image Matting)](#Matting)
-- [图像编辑(Image Editing)](#Image-Editing)
+- Vision-Language
+- Self-supervised Learning
+- Data Augmentation
+- Object Detection
+- Anomaly Detection
+- [Visual Tracking](#VT)
+- [Semantic Segmentation](#Semantic-Segmentation)
+- Instance Segmentation
+- Panoptic Segmentation
+- Medical Image#MI
+- [Medical Image Segmentation](#MIS)
+- [Video Object Segmentation](#VOS)
+- [Video Instance Segmentation](#VIS)
+- [Referring Image Segmentation](#RIS)
+- Image Matting
+- Image Editing
 - [Low-level Vision](#LLV)
-- [超分辨率(Super-Resolution)](#SR)
-- [去噪(Denoising)](#Denoising)
-- [去模糊(Deblur)](#Deblur)
-- [自动驾驶(Autonomous Driving)](#Autonomous-Driving)
-- [3D点云(3D Point Cloud)](#3D-Point-Cloud)
-- [3D目标检测(3D Object Detection)](#3DOD)
-- [3D语义分割(3D Semantic Segmentation)](#3DSS)
-- [3D目标跟踪(3D Object Tracking)](#3D-Object-Tracking)
-- [3D语义场景补全(3D Semantic Scene Completion)](#3DSSC)
-- [3D配准(3D Registration)](#3D-Registration)
-- [3D人体姿态估计(3D Human Pose Estimation)](#3D-Human-Pose-Estimation)
-- [3D人体Mesh估计(3D Human Mesh Estimation)](#3D-Human-Pose-Estimation)
-- [医学图像(Medical Image)](#Medical-Image)
-- [图像生成(Image Generation)](#Image-Generation)
-- [视频生成(Video Generation)](#Video-Generation)
-- [3D生成(3D Generation)](#3D-Generation)
-- [视频理解(Video Understanding)](#Video-Understanding)
-- [行为检测(Action Detection)](#Action-Detection)
-- [文本检测(Text Detection)](#Text-Detection)
-- [知识蒸馏(Knowledge Distillation)](#KD)
-- [模型剪枝(Model Pruning)](#Pruning)
-- [图像压缩(Image Compression)](#IC)
-- [三维重建(3D Reconstruction)](#3D-Reconstruction)
-- [深度估计(Depth Estimation)](#Depth-Estimation)
-- [轨迹预测(Trajectory Prediction)](#TP)
-- [车道线检测(Lane Detection)](#Lane-Detection)
-- [图像描述(Image Captioning)](#Image-Captioning)
-- [视觉问答(Visual Question Answering)](#VQA)
-- [手语识别(Sign Language Recognition)](#SLR)
-- [视频预测(Video Prediction)](#Video-Prediction)
-- [新视点合成(Novel View Synthesis)](#NVS)
-- [Zero-Shot Learning(零样本学习)](#ZSL)
-- [立体匹配(Stereo Matching)](#Stereo-Matching)
-- [特征匹配(Feature Matching)](#Feature-Matching)
-- [场景图生成(Scene Graph Generation)](#SGG)
-- [隐式神经表示(Implicit Neural Representations)](#INR)
-- [图像质量评价(Image Quality Assessment)](#IQA)
-- [视频质量评价(Video Quality Assessment)](#Video-Quality-Assessment)
-- [数据集(Datasets)](#Datasets)
-- [新任务(New Tasks)](#New-Tasks)
-- [其他(Others)](#Others)
+- [Super-Resolution](#SR)
+- Denoising
+- [Deblur](#Deblur)
+- Autonomous Driving
+- 3D Point Cloud
+- 3D Object Detection (#3DOD)
+- 3D Semantic Segmentation
+- 3D Object Tracking
+- 3D Semantic Scene Completion (#3DSSC)
+- 3D Registration
+- 3D Human Pose Estimation
+- 3D Human Mesh Estimation
+- [Medical Image](#Medical-Image)
+- Image Generation
+- Video Generation
+- 3D Generation
+- Video Understanding
+- Action Detection
+- [Text Detection](#Text-Detection)
+- Knowledge Distillation (#KD)
+- [Model Pruning](#Pruning)
+- Image Compression
+- [3D Reconstruction](#3D-Reconstruction)
+- Depth Estimation
+- [Trajectory Prediction](#TP)
+- Lane Detection
+- Image Captioning
+- Visual Question Answering (VQA)
+- [Sign Language Recognition](#SLR)
+- [Video Prediction](#Video-Prediction)
+- Novel View Synthesis (#NVS)
+- Zero-Shot Learning (#ZSL)
+- [Stereo Matching](#Stereo-Matching)
+- [Feature Matching](#Feature-Matching)
+- Scene Graph Generation
+- Implicit Neural Representations
+- Image Quality Assessment (#IQA)
+- [Video Quality Assessment](#Video-Quality-Assessment)
+- [Datasets](#Datasets)
+- New Tasks
+- [Others](#Others)
 
 <a name="3DGS"></a>
 
@@ -198,7 +198,7 @@ CVPR 2024 decisions are now available on OpenReview！
 
 <a name="MAE"></a>
 
-# MAE
+# IT IS
 
 <a name="Embodied-AI"></a>
 
@@ -223,7 +223,7 @@ CVPR 2024 decisions are now available on OpenReview！
 
 <a name="GAN"></a>
 
-# GAN
+# THOUGH
 
 <a name="OCR"></a>
 
@@ -268,7 +268,7 @@ CVPR 2024 decisions are now available on OpenReview！
 
 <a name="MLLM"></a>
 
-# 多模态大语言模型(MLLM)
+# Multimodal Large Language Model (MLLM)
 
 **mPLUG-Owl2: Revolutionizing Multi-modal Large Language Model with Modality Collaboration**
 
@@ -307,7 +307,7 @@ CVPR 2024 decisions are now available on OpenReview！
 
 <a name="LLM"></a>
 
-# 大语言模型(LLM)
+# Large Language Model (LLM)
 
 **VTimeLLM: Empower LLM to Grasp Video Moments**
 
@@ -316,11 +316,11 @@ CVPR 2024 decisions are now available on OpenReview！
 
 <a name="NAS"></a>
 
-# NAS
+# IN THE
 
 <a name="ReID"></a>
 
-# ReID(重识别)
+# ReID (Re-identification)
 
 **Magic Tokens: Select Diverse Tokens for Multi-modal Object Re-Identification**
 
@@ -335,7 +335,7 @@ CVPR 2024 decisions are now available on OpenReview！
 
 <a name="Diffusion"></a>
 
-# 扩散模型(Diffusion Models)
+# Diffusion Models
 
 **InstanceDiffusion: Instance-level Control for Image Generation**
 
@@ -403,7 +403,7 @@ CVPR 2024 decisions are now available on OpenReview！
 
 <a name="VL"></a>
 
-# 视觉和语言(Vision-Language)
+# Vision-Language
 
 **PromptKD: Unsupervised Prompt Distillation for Vision-Language Models**
 
@@ -417,7 +417,7 @@ CVPR 2024 decisions are now available on OpenReview！
 
 <a name="Object-Detection"></a>
 
-# 目标检测(Object Detection)
+# Object Detection
 
 **DETRs Beat YOLOs on Real-time Object Detection**
 
@@ -441,7 +441,7 @@ CVPR 2024 decisions are now available on OpenReview！
 
 <a name="Anomaly-Detection"></a>
 
-# 异常检测(Anomaly Detection)
+# Anomaly Detection
 
 **Anomaly Heterogeneity Learning for Open-set Supervised Anomaly Detection**
 
@@ -450,7 +450,7 @@ CVPR 2024 decisions are now available on OpenReview！
 
 <a name="VT"></a>
 
-# 目标跟踪(Object Tracking)
+# Object Tracking
 
 **Delving into the Trajectory Long-tail Distribution for Muti-object Tracking**
 
@@ -459,7 +459,7 @@ CVPR 2024 decisions are now available on OpenReview！
 
 <a name="Semantic-Segmentation"></a>
 
-# 语义分割(Semantic Segmentation)
+# Semantic Segmentation
 
 **Stronger, Fewer, & Superior: Harnessing Vision Foundation Models for Domain Generalized Semantic Segmentation**
 
@@ -473,7 +473,7 @@ CVPR 2024 decisions are now available on OpenReview！
 
 <a name="MI"></a>
 
-# 医学图像(Medical Image)
+# Medical Image
 
 **Feature Re-Embedding: Towards Foundation Model-Level Performance in Computational Pathology**
 
@@ -492,13 +492,13 @@ CVPR 2024 decisions are now available on OpenReview！
 
 <a name="MIS"></a>
 
-# 医学图像分割(Medical Image Segmentation)
+# Medical Image Segmentation
 
 
 
 <a name="Autonomous-Driving"></a>
 
-# 自动驾驶(Autonomous Driving)
+# Autonomous Driving
 
 **UniPAD: A Universal Pre-training Paradigm for Autonomous Driving**
 
@@ -537,13 +537,13 @@ CVPR 2024 decisions are now available on OpenReview！
 
 <a name="3D-Point-Cloud"></a>
 
-# 3D点云(3D-Point-Cloud)
+# 3D-Point-Cloud
 
 
 
 <a name="3DOD"></a>
 
-# 3D目标检测(3D Object Detection)
+# 3D Object Detection
 
 **PTT: Point-Trajectory Transformer for Efficient Temporal 3D Object Detection**
 
@@ -556,11 +556,11 @@ CVPR 2024 decisions are now available on OpenReview！
 
 <a name="3DOD"></a>
 
-# 3D语义分割(3D Semantic Segmentation)
+# 3D Semantic Segmentation
 
 <a name="Image-Editing"></a>
 
-# 图像编辑(Image Editing)
+# Image Editing
 
 **Edit One for All: Interactive Batch Image Editing**
 
@@ -570,7 +570,7 @@ CVPR 2024 decisions are now available on OpenReview！
 
 <a name="Video-Editing"></a>
 
-# 视频编辑(Video Editing)
+# Video Editing
 
 **MaskINT: Video Editing via Interpolative Non-autoregressive Masked Transformers**
 
@@ -593,7 +593,7 @@ CVPR 2024 decisions are now available on OpenReview！
 
 <a name="SR"></a>
 
-# 超分辨率(Super-Resolution)
+# Super-Resolution
 
 **SeD: Semantic-Aware Discriminator for Image Super-Resolution**
 
@@ -607,13 +607,13 @@ CVPR 2024 decisions are now available on OpenReview！
 
 <a name="Denoising"></a>
 
-# 去噪(Denoising)
+# Denoising
 
-## 图像去噪(Image Denoising)
+## Image Denoising
 
 <a name="3D-Human-Pose-Estimation"></a>
 
-# 3D人体姿态估计(3D Human Pose Estimation)
+# 3D Human Pose Estimation
 
 **Hourglass Tokenizer for Efficient Transformer-Based 3D Human Pose Estimation**
 
@@ -622,7 +622,7 @@ CVPR 2024 decisions are now available on OpenReview！
 
 <a name="Image-Generation"></a>
 
-# 图像生成(Image Generation)
+# Image Generation
 
 **InstanceDiffusion: Instance-level Control for Image Generation**
 
@@ -673,7 +673,7 @@ CVPR 2024 decisions are now available on OpenReview！
 
 <a name="Video-Generation"></a>
 
-# 视频生成(Video Generation)
+# Video Generation
 
 **Vlogger: Make Your Dream A Vlog**
 
@@ -694,7 +694,7 @@ CVPR 2024 decisions are now available on OpenReview！
 
 <a name="3D-Generation"></a>
 
-# 3D生成
+# 3D Generation
 
 **CityDreamer: Compositional Generative Model of Unbounded 3D Cities**
 
@@ -709,7 +709,7 @@ CVPR 2024 decisions are now available on OpenReview！
 
 <a name="Video-Understanding"></a>
 
-# 视频理解(Video Understanding)
+# Video Understanding
 
 **MVBench: A Comprehensive Multi-modal Video Understanding Benchmark**
 
@@ -718,7 +718,7 @@ CVPR 2024 decisions are now available on OpenReview！
 
 <a name="KD"></a>
 
-# 知识蒸馏(Knowledge Distillation)
+# Knowledge Distillation
 
 **Logit Standardization in Knowledge Distillation**
 
@@ -732,7 +732,7 @@ CVPR 2024 decisions are now available on OpenReview！
 
 <a name="Stereo-Matching"></a>
 
-# 立体匹配(Stereo Matching)
+# Stereo Matching
 
 **Neural Markov Random Field for Stereo Matching**
 
@@ -741,7 +741,7 @@ CVPR 2024 decisions are now available on OpenReview！
 
 <a name="SGG"></a>
 
-# 场景图生成(Scene Graph Generation)
+# Scene Graph Generation
 
 **HiKER-SGG: Hierarchical Knowledge Enhanced Robust Scene Graph Generation**
 
@@ -751,7 +751,7 @@ CVPR 2024 decisions are now available on OpenReview！
 
 <a name="Video-Quality-Assessment"></a>
 
-# 视频质量评价(Video Quality Assessment)
+# Video Quality Assessment
 
 **KVQ: Kaleidoscope Video Quality Assessment for Short-form Videos**
 
@@ -762,7 +762,7 @@ CVPR 2024 decisions are now available on OpenReview！
 
 <a name="Datasets"></a>
 
-# 数据集(Datasets)
+#Datasets
 
 **A Real-world Large-scale Dataset for Roadside Cooperative Perception**
 
@@ -776,7 +776,7 @@ CVPR 2024 decisions are now available on OpenReview！
 
 <a name="Others"></a>
 
-# 其他(Others)
+# Others
 
 **Object Recognition as Next Token Prediction**
 
